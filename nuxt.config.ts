@@ -1,5 +1,15 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1.0',
+      htmlAttrs: {
+        lang: 'zxx'
+      }
+    },
+    baseURL: '/portfilo/'
+  },
   modules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
