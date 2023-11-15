@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  target: 'static',
   app: {
     head: {
       charset: 'utf-8',
