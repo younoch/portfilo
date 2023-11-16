@@ -3,8 +3,8 @@
     <div class="grid-layout">
       <div id="skills">
         <article id="skills-text">
-          <h2 class="delaySmallReveal">
-            Conhecimentos <span>.</span>
+          <h2 class="delaySmallReveal text-2xl md:text-3xl">
+            Skills <span>.</span>
           </h2>
           <p class="delayMediumReveal changeDescription">
             *passe o cursor do mouse no card para ler*

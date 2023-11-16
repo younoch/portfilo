@@ -1,7 +1,7 @@
 <template>
   <section id="s-experience">
     <div class="grid-layout">
-      <h2 class="delaySmallReveal">
+      <h2 class="delaySmallReveal text-2xl md:text-3xl">
         Experiences <span>.</span>
       </h2>
       <div id="experience">
@@ -9,13 +9,13 @@
           id="experience-company"
           class="option-experience intervalCardReveal"
         >
-          <div v-for="(item, index) in experinceList" :key="index" class="company digitalhouse" :class="{'activeExperience' : activeSection === index }">
+          <div v-for="(item, index) in experinceList" :key="index" class="company digitalhouse" :class="{'activeExperience' : activeSection === index }" @click="cheangActive(index)">
             <h3>{{ item.name }}</h3>
           </div>
         </div>
         <div class="text-experience intervalCardReveal">
           <div>
-            <h4 class="titleExperience">
+            <h4 class="titleExperience text-lg font-medium">
               {{ activeExperience.role }}
             </h4>
             <p class="dateExperience">
@@ -25,13 +25,12 @@
           <h5 class="companyExperience">
             {{ activeExperience.name }}
           </h5>
-          <p class="">
-            Trabalhei como instrutor conteudista em frontend na Digital
-            House, o trabalho consistia em criar conteúdos para as aulas de
-            especialização frontend. Alguns temas dos conteúdos realizados
-            foram: React, Redux, TypeScript, Testes, GraphQL, Next.js, MUI,
-            React Hook Form e styled-components.
-          </p>
+
+          <ol class="list-decimal ml-3">
+            <li v-for="(res, idx) in activeExperience.reponsibilies" :key="`res${idx}`" class="my-2">
+              {{ res }}
+            </li>
+          </ol>
         </div>
       </div>
     </div>
@@ -43,7 +42,7 @@ const experinceList = ref([
   {
     name: 'Gain Solutions',
     duration: 'May,2023 - Present',
-    role: 'Full stack JavaScript Developer',
+    role: 'JavaScript Developer',
     link: 'https://www.gainhq.com/',
     reponsibilies: [
       'Monitored and ensured the quality of reusable and optimized code using ESLint, Prettier, and Volar tools.',
@@ -52,7 +51,36 @@ const experinceList = ref([
       'Debugged errors using Node.js inspector, breakpoints, browser DevTools, etc.',
       'Managed and tracked the progress of the projects using Microsoft Teams, Jira, Slack, Zenhub and ClickUp.'
     ]
+  },
+  {
+    name: 'Tork Inc',
+    duration: 'January,2022- May 2023',
+    role: 'Full stack JavaScript Developer',
+    link: 'https://www.gainhq.com/',
+    reponsibilies: [
+      'Developed SEO and Server-side rendering oriented and se websites using Nuxt.js framework and followed SEO best practices such as meta tags, keywords, reboot, sitemaps etc.',
+      'Ensure responsive design and optimal performance across all microsites.',
+      'Mentored a team of 6-7 intern front-end developers, fostering their growth and development in the field.',
+      'Debugged errors using Node.js inspector, breakpoints, browser DevTools, etc.',
+      'Managed and tracked the progress of the projects using Microsoft Teams, Jira, Slack, Zenhub and YouTrack.'
+    ]
+  },
+  {
+    name: 'Developer Experience Hub',
+    duration: 'April,2021- Dec,2021',
+    role: 'Jr. Frontend Developer (Vue.js / Nuxt.js)',
+    link: 'https://devxhub.com/',
+    reponsibilies: [
+      'Created user-friendly and responsive websites and web applications using Vue.js, Nuxt.js, Vue CLI and other web technologies.',
+      'Worked with RESTful APIs to integrate data from various sources and ensure smooth functionality.',
+      'Tested and debugged code using various tools.'
+    ]
   }
 ])
-const activeExperience = experinceList.value[0]
+const activeExperience = ref(experinceList.value[0])
+
+const cheangActive = (index: number) => {
+  activeExperience.value = experinceList.value[index]
+  activeSection.value = index
+}
 </script>

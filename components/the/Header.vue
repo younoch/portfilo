@@ -19,7 +19,7 @@
             <a href="#s-services">Services</a>
           </li> -->
           <li>
-            <a href="#s-skills">Knowledge</a>
+            <a href="#s-skills">Skills</a>
           </li>
         </ul>
       </nav>

@@ -41,18 +41,39 @@ const projectList = ref([
     link: 'https://cxbrainstorm.com/'
   },
   {
-    image: '/project/cx.jpg',
+    image: '/project/kirei-bd.png',
     title: 'Kirei BD',
     description: 'A web app that provided professionals ecommerce site for Japanese Beauty Products.',
     keyFeatures: 'Authentication(JWT), blogging, sslcommerz payment etc.',
     link: 'https://kireibd.com/'
   },
   {
-    image: '/project/cx.jpg',
+    image: '/project/ready-kit.png',
     title: 'Ready Kit',
     description: 'A web app that provided developer kit to build management panel for CRM, LMS etc.',
     keyFeatures: 'Authentication(JWT), blogging etc.',
     link: 'https://readykit.gainhq.com/'
+  },
+  {
+    image: '/project/sharparchive.png',
+    title: 'Sharp Archive',
+    description: 'A web app that provided social media monitoring and Archiving software',
+    keyFeatures: 'Authentication(JWT), Archiving, blogging etc. ',
+    link: 'https://sharparchive.com'
+  },
+  {
+    image: '/project/course-cab.png',
+    title: 'Course Cab',
+    description: 'A web app that provided LMS system for an tranning institution',
+    keyFeatures: 'Authentication(JWT), enrolling, payment system etc.',
+    link: 'https://www.coursecab.com/'
+  },
+  {
+    image: '/project/thespekers.png',
+    title: 'The Speakers',
+    description: 'A web app that provided micro blogging',
+    keyFeatures: 'Authentication(JWT), blogging etc.',
+    link: 'https://www.the-speakers.com/'
   }
 
 ])

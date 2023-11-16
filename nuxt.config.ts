@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         lang: 'zxx'
       }
     },
-    baseURL: '/portfilo/'
+    // baseURL: '/portfolio-deploy/'
   },
   modules: [
     '@vueuse/nuxt',
