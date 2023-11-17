@@ -7,7 +7,7 @@
             Skills <span>.</span>
           </h2>
           <p class="delayMediumReveal changeDescription">
-            *passe o cursor do mouse no card para ler*
+            Showcasing my expertise in front-end and back-end technologies
           </p>
         </article>
 
@@ -45,20 +45,10 @@
             >
           </article>
           <article class="react intervalCardReveal">
-            <img
-              src="/icons/react.svg"
-              width="60px"
-              height="60px"
-              alt="ícone do react"
-            >
+            <nuxt-icon class=" text-5xl text-[#986dff]" name="vue" />
           </article>
           <article class="next intervalCardReveal">
-            <img
-              src="/icons/next.svg"
-              width="60px"
-              height="60px"
-              alt="ícone do next"
-            >
+            <nuxt-icon class=" text-5xl text-[#986dff]" name="nuxt" />
           </article>
           <article class="styled intervalCardReveal">
             <img

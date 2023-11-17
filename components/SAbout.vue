@@ -32,7 +32,6 @@
                   src="/icons/linkedin.svg"
                   rel="noopener"
                   alt="Ícone do LinkedIn"
-                  onload="SVGInject(this)"
                 ></li></a>
 
               <a
@@ -43,7 +42,6 @@
                 <img
                   src="/icons/github.svg"
                   alt="Ícone do GitHub"
-                  onload="SVGInject(this)"
                 ></li></a>
 
               <a

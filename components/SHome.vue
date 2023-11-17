@@ -17,7 +17,6 @@
           id="logo"
           src="/image/logo.svg"
           alt="Mohammad Younoch"
-          onload="SVGInject(this)"
           width="500px"
           height="500px"
         >
